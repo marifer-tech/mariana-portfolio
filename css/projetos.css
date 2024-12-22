@@ -1,0 +1,91 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #3e003e;
+    color: #fff;
+    text-align: center;
+}
+
+.header {
+    padding: 20px;
+    background-color: #240024;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    background: linear-gradient(to right, #f763a6, #7f00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: #1c001c;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    font-size: 1.5em;
+    background: linear-gradient(to right, #f763a6, #7f00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #bbb;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.card iframe {
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #da1e76;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer .btn:hover {
+    background-color: #f763a6; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a intensidade da sombra */
+}
