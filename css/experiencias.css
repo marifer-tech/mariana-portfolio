@@ -51,11 +51,11 @@ body {
 .card img {
     width: 150px;
     height: 150px;
+    style="border-radius: 1em;
 }
 
 .card:hover {
     transform: scale(1.05);
-    style="border-radius: 1em;
 }
 
 .card h2 {
