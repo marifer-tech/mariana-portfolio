@@ -20,3 +20,44 @@ document.addEventListener("DOMContentLoaded", function() {
     // Verificar ao carregar a página
     checkScroll();
 });
+
+//função para total de horas de certificação
+const ctx = document.getElementById('totalHoursChart').getContext('2d');
+        const totalHours = 6.5 + 39 + 112.5 + 217.5 + 52 + 38.5 + 20; // Soma das horas
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [''],
+                datasets: [{
+                    label: 'Horas de Certificação:' + [totalHours],
+                    data: [totalHours],
+                    backgroundColor: ['#7f00ff'],
+                    borderColor: '#fff',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                indexAxis: 'y', // Gráfico horizontal
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'total de horas de certificação'
+                        },
+                        beginAtZero: true
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: ''
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: true
+                    }
+                }
+            }
+        });
