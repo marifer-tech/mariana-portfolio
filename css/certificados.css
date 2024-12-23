@@ -89,3 +89,10 @@ footer .btn:hover {
     transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a intensidade da sombra */
 }
+
+#totalHoursChart {
+    width: 100%; /* Largura máxima do gráfico */
+    max-width: 500px; /* Largura máxima em pixels */
+    height: auto; /* Altura ajustada automaticamente */
+    margin: 0 auto; /* Centraliza o gráfico */
+}
