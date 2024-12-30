@@ -68,6 +68,12 @@ body {
     margin-bottom: 10px;
 }
 
+.card img {
+    height: 300px;
+    width: 300px;
+    border-radius: 0.5em;
+}
+
 footer .btn {
     display: inline-block;
     padding: 10px 20px;

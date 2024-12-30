@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #000000;
+    background-color: #3e003e;
     color: #fff;
     text-align: center;
 }
@@ -100,7 +100,7 @@ width: 200px; /*largura*/
     width: 200px;
     height: 200px;
     border-radius: 60%;
-    border: 5px solid #000000;
+    border: 5px solid #494545;
     margin-bottom: 10px;
 }
 
