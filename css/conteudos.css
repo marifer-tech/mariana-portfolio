@@ -12,8 +12,24 @@ body {
     background-color: #240024;
 }
 
+header .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #da1e76;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .header h1 {
-    font-size: 3em;
+    font-size: 1.4em;
     color: #f763a6;
     background: linear-gradient(to right, #f763a6, #7f00ff);
     -webkit-background-clip: text;
@@ -22,7 +38,7 @@ body {
 }
 
 .header p {
-    font-size: 1.2em;
+    font-size: 0.7em;
     color: #ddd;
     text-align: justify;
 }
@@ -88,24 +104,10 @@ body {
     background-color: #e05294;
 }
 
-footer .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px auto;
-    background-color: #da1e76;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1em;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.3s;
-    text-align: center;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-footer .btn:hover {
-    background-color: #f763a6; /* Cor ao passar o mouse */
-    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a intensidade da sombra */
+footer {
+    background-color: #1c001c;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
 }

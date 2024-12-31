@@ -13,7 +13,7 @@ body {
 }
 
 .header h1 {
-    font-size: 3em;
+    font-size: 1.4em;
     color: #f763a6;
     background: linear-gradient(to right, #f763a6, #7f00ff);
     -webkit-background-clip: text;
@@ -22,14 +22,14 @@ body {
 }
 
 .header p {
-    font-size: 1.2em;
+    font-size: 0.7em;
     color: #ddd;
     text-align: justify;
 }
 
 .header img {
-height: 200px; /*altura*/
-width: 200px; /*largura*/
+height: 60px; /*altura*/
+width: 60px; /*largura*/
 }
 .cards {
     display: flex;
@@ -64,7 +64,7 @@ width: 200px; /*largura*/
 }
 
 .card p {
-    font-size: 1em;
+    font-size: 0.7em;
     color: #bbb;
     text-align: justify;
     
@@ -104,3 +104,10 @@ width: 200px; /*largura*/
     margin-bottom: 10px;
 }
 
+footer {
+    background-color: #1c001c;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
