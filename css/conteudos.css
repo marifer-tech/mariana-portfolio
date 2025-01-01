@@ -30,15 +30,15 @@ header .btn {
 
 .header h1 {
     font-size: 1.4em;
-    color: #f763a6;
-    background: linear-gradient(to right, #f763a6, #7f00ff);
+    color: #e0a800;
+    background: #e0a800;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
 }
 
 .header p {
-    font-size: 0.7em;
+    font-size: 1em;
     color: #ddd;
     text-align: justify;
 }
@@ -89,25 +89,31 @@ header .btn {
     
 }
 
-.card .btn {
+.header .btn {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #f763a6;
-    color: #fff;
+    background-color: #e0a800;
+    color: #3e003e;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
-.card .btn:hover {
-    background-color: #e05294;
+.header .btn:hover {
+    background-color: #fff;
 }
 
 footer {
-    background-color: #1c001c;
+    background-color: #240024;
     padding: 20px 0;
     margin: 0;
     width: 100%;
     box-sizing: border-box;
+}
+
+footer img {
+    width: 60px;
+    height: 60px;
+    justify-items: center;
 }

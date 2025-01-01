@@ -16,8 +16,8 @@ header .btn {
     display: inline-block;
     padding: 10px 20px;
     margin: 20px auto;
-    background-color: #da1e76;
-    color: #fff;
+    background-color: #e0a800;
+    color: #3e003e;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1em;
@@ -28,15 +28,20 @@ header .btn {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+.header .btn:hover {
+    background-color: #fff;
+}
+
+
 .header h1 {
     font-size: 1.4em;
-    background: linear-gradient(to right, #f763a6, #7f00ff);
+    background: #e0a800;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .header p {
-    font-size: 0.7em;
+    font-size: 1em;
     color: #ddd;
     text-align: justify;
 }
@@ -66,7 +71,7 @@ header .btn {
 
 .card h2 {
     font-size: 1.5em;
-    background: linear-gradient(to right, #f763a6, #7f00ff);
+    background: #e0a800;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 10px;
@@ -92,9 +97,15 @@ header .btn {
 }
 
 footer {
-    background-color: #1c001c;
+    background-color: #240024;
     padding: 20px 0;
     margin: 0;
     width: 100%;
     box-sizing: border-box;
+}
+
+footer img {
+    width: 60px;
+    height: 60px;
+    justify-items: center;
 }
