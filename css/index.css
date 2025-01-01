@@ -56,9 +56,9 @@ width: 60px; /*largura*/
 
 .card h2 {
     font-size: 3 em;
-    color: #f763a6;
+    color: #e0a800;
     margin-bottom: 10px;
-    background: linear-gradient(to right, #ffc107, #ffc107);
+    background: #e0a800;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

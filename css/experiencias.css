@@ -37,7 +37,7 @@ header .btn:hover {
 .header h1 {
     font-size: 1.4em;
     color: #f763a6;
-    background: linear-gradient(to right, #f763a6, #7f00ff);
+    background: #e0a800;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
