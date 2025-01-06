@@ -28,8 +28,8 @@ body {
 }
 
 .header img {
-height: 60px; /*altura*/
-width: 60px; /*largura*/
+height: 200px; /*altura*/
+width: 200px; /*largura*/
 }
 .cards {
     display: flex;
