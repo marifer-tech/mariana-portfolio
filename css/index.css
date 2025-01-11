@@ -33,10 +33,21 @@ width: 120px; /*largura*/
 }
 
 .header .social-images img {
-    width: 40px; /* Ajuste a largura */
-    height: 40px; /* Ajuste a altura */
-    object-fit: contain; /* Mantém a proporção da imagem */
+    display: block;
+    margin: 0; /* Remove qualquer margem */
+    padding: 0; /* Remove qualquer padding */
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
+
+.header .social-images {
+    display: flex;
+    gap: 10px; /* Espaçamento entre as imagens */
+    justify-content: center; /* Centraliza as imagens no contêiner */
+    align-items: center; /* Alinha verticalmente */
+}
+
     
 .cards {
     display: flex;
@@ -128,10 +139,10 @@ footer img {
 /* Estilo para o botão flutuante do LinkedIn */
 .linkedin-float {
     position: fixed;
-    bottom: 90px; /* Posição acima do botão do WhatsApp */
-    right: 20px; /* Alinhado à direita como o botão do WhatsApp */
-    width: 60px; /* Largura do botão */
-    height: 60px; /* Altura do botão */
+    bottom: 65px; /* Posição acima do botão do WhatsApp */
+    right: 10px; /* Alinhado à direita como o botão do WhatsApp */
+    width: 40px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
     background-color: rgb(0, 118, 181); /* Cor oficial do LinkedIn com transparência */
     border-radius: 40%; /* Botão redondo */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
@@ -143,8 +154,8 @@ footer img {
 }
 
 .linkedin-float img {
-    width: 60px; /* Largura do ícone */
-    height: 60px; /* Altura do ícone */
+    width: 40px; /* Largura do ícone */
+    height: 40px; /* Altura do ícone */
 }
 
 .linkedin-float:hover {
@@ -159,9 +170,9 @@ footer img {
 .whatsapp-float {
     position: fixed;
     bottom: 20px; /* Distância da borda inferior */
-    right: 20px; /* Distância da borda direita */
-    width: 60px; /* Largura do botão */
-    height: 60px; /* Altura do botão */
+    right: 10px; /* Distância da borda direita */
+    width: 40px; /* Largura do botão */
+    height: 40px; /* Altura do botão */
     background-color: rgb(37, 211, 101); /* Fundo com transparência */
     border-radius: 15%; /* Botão redondo */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
@@ -173,8 +184,8 @@ footer img {
 }
 
 .whatsapp-float img {
-    width: 60px; /* Largura do ícone */
-    height: 60px; /* Altura do ícone */
+    width: 40px; /* Largura do ícone */
+    height: 40px; /* Altura do ícone */
 }
 
 .whatsapp-float:hover {
@@ -183,4 +194,6 @@ footer img {
     background-color: rgba(37, 211, 102, 1); /* Fundo mais sólido no hover */
     cursor: pointer; /* Mostra o cursor pointer ao passar o mouse */
 }
+
+
 
