@@ -28,9 +28,16 @@ body {
 }
 
 .header img {
-height: 200px; /*altura*/
-width: 200px; /*largura*/
+height: 120px; /*altura*/
+width: 120px; /*largura*/
 }
+
+.header .social-images img {
+    width: 40px; /* Ajuste a largura */
+    height: 40px; /* Ajuste a altura */
+    object-fit: contain; /* Mantém a proporção da imagem */
+}
+    
 .cards {
     display: flex;
     flex-direction: column;
