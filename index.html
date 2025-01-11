@@ -29,8 +29,6 @@
     <header class="header">
         <img src="images-index/eagle.jpg" alt="Foto de Mariana" class="eagle-pic">
         <h1>MARIANA FERNANDA DA SILVA</h1>
-        <p style="text-align: center;">PORTFÓLIO VIRTUAL</p>
-        
         <div class ="social-images">
 
         <a href ="https://instagram.com/mf.silva.ti">
@@ -62,14 +60,26 @@
 
         <section class="card" id="quem-eu-sou">
             <h2 style="font-size: 30px;">SOBRE MIM</h2>
+
+           
             <div class="profile">
                 <img src="images-index/minha-foto.png" alt="Foto de Mariana" class="profile-pic">
-                <P>
+
+                <div class="audio-controls">
+                    <button class="audio-btn" onclick="playAudio('audios/portugues.mp3')">🇧🇷</button>
+                    <button class="audio-btn" onclick="playAudio('audios/ingles.mp3')">🇺🇸</button>
+                </div>
+                <audio id="audio-player" style="display: none;"></audio>
+                <p style="text-align: center;">[Selecione o idioma acima e ouça sobre mim]</p>
+
+
+                <P style="font-weight: bold;">
                     Olá, eu sou Mariana, desenvolvedora web freelancer e estudante de Sistemas de Informação na UFMT. Com experiência em front-end e back-end, trabalho criando soluções digitais personalizadas que transformam ideias em projetos reais. Além disso, também tenho experiência em suporte técnico, onde aperfeiçoei minhas habilidades de resolução de problemas e atendimento às necessidades de usuários e empresas. Minha paixão por tecnologia me motiva a buscar inovação em cada projeto, entregando resultados práticos e de alta qualidade. 
                 </P>
-                <P>
+                <p style="font-style: italic;">
                     Hello, I am Mariana, a freelance web developer and a Systems Information student at UFMT. With experience in front-end and back-end development, I create customized digital solutions that turn ideas into real projects. Additionally, I have experience in technical support, where I honed my problem-solving skills and the ability to meet the needs of users and businesses. My passion for technology drives me to seek innovation in every project, delivering practical and high-quality results. 
                 </P>
+
                 <h2 style="font-size: 1em;">PORTFÓLIO EM PDF</h2>
                 <a href="pdf/curriculum.pdf" class="btn" download="Portfolio.pdf">Formato A4</a>
                 <a href="pdf/portfolio-mariana.pdf" class="btn" download="Portfolio.pdf">Slide Interativo</a>
@@ -101,12 +111,12 @@
 
         <section class="card" id="certificados">
             <h2 style="font-size: 2em;">ACADÊMICO</h2>
-            <a href="academico.html" class="btn">Acessar</a>
+            <a href="academico.html" class="btn">Construindo</a>
         </section>
 
         <section class="card" id="certificados">
             <h2 style="font-size: 2em;">TRILHA DE ESTUDOS</h2>
-            <a href="conteudos.html" class="btn">Acessar</a>
+            <a href="conteudos.html" class="btn">Construindo</a>
         </section>
     </main>
 

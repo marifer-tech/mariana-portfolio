@@ -61,3 +61,11 @@ const ctx = document.getElementById('totalHoursChart').getContext('2d');
                 }
             }
         });
+
+        //audio
+        function playAudio(audioSrc) {
+            const audioPlayer = document.getElementById('audio-player');
+            audioPlayer.src = audioSrc; // Define o caminho do áudio
+            audioPlayer.play(); // Toca o áudio
+        }
+        
