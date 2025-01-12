@@ -86,7 +86,8 @@ width: 100px; /*largura*/
 }
 
 .card {
-    background-color: #1c001c;
+
+    background:#1c001c;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
