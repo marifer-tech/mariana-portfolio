@@ -62,10 +62,21 @@ const ctx = document.getElementById('totalHoursChart').getContext('2d');
             }
         });
 
-        //audio
-        function playAudio(audioSrc) {
-            const audioPlayer = document.getElementById('audio-player');
-            audioPlayer.src = audioSrc; // Define o caminho do áudio
-            audioPlayer.play(); // Toca o áudio
+//audio
+function playAudio(audioSrc) {
+    const audioPlayer = document.getElementById('audio-player');
+    
+    if (audioPlayer.src !== location.origin + '/' + audioSrc) {
+        // Define a nova fonte de áudio e inicia a reprodução
+        audioPlayer.src = audioSrc;
+        audioPlayer.play();
+    } else {
+        // Alterna entre reproduzir e pausar
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+        } else {
+            audioPlayer.pause();
         }
-        
+    }
+}
+
