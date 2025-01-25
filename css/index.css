@@ -13,7 +13,7 @@ body {
 }
 
 .header h1 {
-    font-size: 2em; /* Tamanho inicial */
+    font-size: 4em; /* Tamanho inicial */
     color: #e0a800;
     margin-bottom: 10px;
     background: #e0a800;
@@ -21,6 +21,12 @@ body {
     -webkit-text-fill-color: transparent;
 
 }
+
+@media (max-width: 768px) {
+   .header h1 {
+    font-size: 1.4em;
+   }
+        }
 
 .header p {
     font-size: 1em;
@@ -37,8 +43,8 @@ width: 100px; /*largura*/
     display: block;
     margin: 0; /* Remove qualquer margem */
     padding: 0; /* Remove qualquer padding */
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     object-fit: contain;
     transition: transform 0.3s ease, color 0.3s ease; /* Animação suave */
 
@@ -52,7 +58,7 @@ width: 100px; /*largura*/
 
 .header .social-images {
     display: flex;
-    gap: 10px; /* Espaçamento entre as imagens */
+    gap: 5px; /* Espaçamento entre as imagens */
     justify-content: center; /* Centraliza as imagens no contêiner */
     align-items: center; /* Alinha verticalmente */
 }
@@ -65,8 +71,8 @@ width: 100px; /*largura*/
 }
 
 .audio-btn {
-    width: 50px; /* Tamanho do botão */
-    height: 50px; /* Tamanho do botão */
+    width: 40px; /* Tamanho do botão */
+    height: 40px; /* Tamanho do botão */
     background-color: #e0a800; /* Fundo dourado */
     border: 2px solid #e0a800; /* Borda dourada */
     border-radius: 50%; /* Botões redondos */
@@ -107,8 +113,13 @@ width: 100px; /*largura*/
 }
 
 .share img{
-    max-width: 10em;
+    max-width: 4em;
     height: auto;
+    transition: transform 0.3s;
+}
+
+.share img:hover{
+    transform: scale(1.2);
 }
 
 .card:hover {
