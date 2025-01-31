@@ -1,21 +1,20 @@
-
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #3e003e;
     color: #fff;
     text-align: center;
-}
-
-.header {
+  }
+  
+  .header {
     padding: 20px;
     background-color: #240024;
-}
-
-header .btn {
+  }
+  
+  header .btn {
     display: inline-block;
     padding: 10px 20px;
-    margin: 20px auto;
+    margin: 10px 5px;
     background-color: #e0a800;
     color: #3e003e;
     text-decoration: none;
@@ -23,43 +22,33 @@ header .btn {
     font-size: 1em;
     font-weight: bold;
     transition: background-color 0.3s, transform 0.3s;
-    text-align: center;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-header .btn:hover {
-    background-color: #d4be7d; /* Cor ao passar o mouse */
-    transform: scale(1.05); /* Aumenta ligeiramente o tamanho */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a intensidade da sombra */
-}
-
-.header h1 {
+  }
+  
+  header .btn:hover {
+    background-color: #d4be7d;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .header h1 {
     font-size: 1.4em;
     color: #f763a6;
     background: #e0a800;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
-}
-
-.header p {
-    font-size: 1em;
-    color: #ddd;
-    text-align: justify;
-}
-
-
-.cards {
+  }
+  
+  .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
     margin: 20px 0;
-    
-}
-
-.card {
+  }
+  
+  .card {
     background-color: #1c001c;
     margin: 20px;
     padding: 20px;
@@ -68,58 +57,122 @@ header .btn:hover {
     width: 80%;
     max-width: 500px;
     transition: transform 0.3s;
-}
-
-.card img {
+  }
+  
+  .card img {
     width: 150px;
     height: 150px;
     border-radius: 1em;
-}
-
-.card:hover {
+  }
+  
+  .card:hover {
     transform: scale(1.05);
-}
-
-.card h2 {
+  }
+  
+  .card h2 {
     font-size: 3em;
     color: #f763a6;
     margin-bottom: 10px;
     background: #e0a800;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.card p {
+  }
+  
+  .card p {
     font-size: 1em;
     color: #bbb;
     text-align: justify;
-    
-}
-
-
-footer {
+  }
+  
+  /* Inicialmente, mostra apenas o texto em português */
+  .pt { display: block; }
+  .en { display: none; }
+  
+  footer {
     background-color: #240024;
     padding: 20px 0;
     margin: 0;
     width: 100%;
     box-sizing: border-box;
-}
-
-footer img {
+  }
+  
+  footer img {
     width: 60px;
     height: 60px;
-    justify-items: center;
-}
-
-/* Classe inicial para ocultar os elementos */
-.hidden {
+  }
+  
+  /* Classe inicial para ocultar os elementos (para animação) */
+  .hidden {
     opacity: 0;
-    transform: translateY(20px); /* Move um pouco para baixo */
+    transform: translateY(20px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-/* Classe para mostrar os elementos */
-.show {
+  }
+  
+  /* Classe para mostrar os elementos (para animação) */
+  .show {
     opacity: 1;
-    transform: translateY(0); /* Retorna à posição original */
-}
+    transform: translateY(0);
+  }
+  
+  /* Estilos do Modal */
+  .modal {
+    display: none; /* Escondido por padrão */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #1c001c;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .modal-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .modal-content button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0a800;
+    color: #3e003e;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .modal-content button:hover {
+    background-color: #d4be7d;
+  }
+  
+  /* Estilos para dispositivos móveis */
+  @media (max-width: 600px) {
+    .modal-content {
+      width: 90%;
+    }
+  
+    .modal-content p {
+      font-size: 1em;
+    }
+  
+    .modal-content button {
+      font-size: 0.9em;
+    }
+  }
+  
