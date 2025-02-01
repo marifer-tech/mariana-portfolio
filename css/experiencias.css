@@ -141,8 +141,9 @@ body {
   }
   
   .modal-content p {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-bottom: 20px;
+    text-align: justify;
   }
   
   .modal-content button {

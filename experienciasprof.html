@@ -4,76 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experiências Profissionais - Mariana Fernanda da Silva</title>
-  <!-- Vincula o CSS -->
   <link rel="stylesheet" href="css/experiencias.css">
 </head>
 <body>
   <header class="header">
     <h1>MINHAS EXPERIÊNCIAS</h1>
+    <h1 style="font-size: 13px;">MY EXPERIENCES</h1>
     <button onclick="window.history.back()" class="btn">Voltar</button>
-    <!-- Botão para alternar idioma dos cards -->
     <button id="toggleCardsLanguage" class="btn">English</button>
   </header>
 
   <main class="cards">
     <!-- Card 1 -->
     <section class="card hidden">
-      <h2 style="font-size: 1.8em;">Suporte Técnico</h2>
+      <h2 class="pt" style="font-size: 1.8em;">Técnica em Suporte Junior</h2>
+      <h2 class="en" style="font-size: 1.8em;">Junior Support Technician</h2>
       <img src="images-index/jobs/bsx1.png" alt="Suporte Técnico" class="experience-img">
-      <!-- Texto em Português -->
       <p class="pt" style="font-weight: bold;">
         Trabalhei durante 6 meses como suporte técnico na Bsx Tecnologia, onde desenvolvi habilidades iniciais em manipulação de bancos de dados usando SQL Management, implementações de TEF (Transferência Eletrônica de Fundos) e softwares de gestão empresarial para diferentes setores. Também atuei no suporte ao cliente, auxiliando em fluxos de vendas, emissão e entrada de notas fiscais, atualizações de sistema e treinamento básico para usuários.
       </p>
-      <!-- Texto em Inglês (inicialmente oculto) -->
-      <p class="en" style="font-style: italic;">
+      <p class="en" style="font-style: italic; display: none;">
         I worked for 6 months as a technical support professional at Bsx Tecnologia, where I developed beginner-level skills in SQL Management, TEF implementation, and business management software for various sectors. I also assisted customers with sales processes, invoice handling, system updates, and basic user training.
       </p>
     </section>
 
     <!-- Card 2 -->
     <section class="card hidden">
-      <h2 style="font-size: 1.8em;">Estágio na Politec</h2>
+      <h2 class="pt" style="font-size: 1.8em;">Estagiária de TI na Politec</h2>
+      <h2 class="en" style="font-size: 1.8em;">IT Trainee at Politec</h2>
       <img src="images-index/jobs/politec.png" alt="Estágio Politec" class="experience-img">
       <p class="pt" style="font-weight: bold;">
-        Atuei no setor de Identificação Civil, auxiliando nos trâmites de recebimento, gerenciamento e disponibilização da nova Carteira de Identidade Nacional para a população mato-grossense. Operei o sistema interno de Identificação Civil, explorando os módulos e manipulando planilhas de controle.
+        Atuei no setor de Identificação Civil, auxiliando nos trâmites de recebimento, 
+        gerenciamento e disponibilização da nova Carteira de Identidade Nacional para 
+        a população mato-grossense. Operei o sistema interno de Identificação Civil, 
+        explorando os módulos e manipulando planilhas de controle.
       </p>
-      <p class="en" style="font-style: italic;">
-        I worked in the Civil Identification sector, assisting with receiving, managing, and issuing the new National Identity Card for the population of Mato Grosso. I operated the internal system and handled control spreadsheets.
+      <p class="en" style="font-style: italic; display: none;">
+        I worked in the Civil Identification sector, assisting with receiving, 
+        managing, and issuing the new National Identity Card for the population 
+        of Mato Grosso. I operated the internal system and handled control spreadsheets.
       </p>
     </section>
 
     <!-- Card 3 -->
     <section class="card hidden">
-      <h2 style="font-size: 1.8em;">Desenvolvedora Web</h2>
+      <h2 class="pt" style="font-size: 1.8em;">Desenvolvedora Web</h2>
+      <h2 class="en" style="font-size: 1.8em;">Web Developer</h2>
       <a href="https://mariana-silva.netlify.app/projetos" target="_blank">
         <img src="images-index/jobs/devweb.png" alt="Desenvolvedora Web" class="experience-img">
       </a>
       <p class="pt" style="font-weight: bold;">
-        Desde o início de 2024, dediquei-me intensamente ao aprendizado de desenvolvimento web, explorando tecnologias como HTML, CSS, JavaScript, além de frameworks modernos como React e Node.js. Desenvolvi diversos projetos práticos, incluindo websites responsivos e sistemas backend eficientes.
+        Desde o início de 2024, dediquei-me intensamente ao aprendizado 
+        de desenvolvimento web, explorando tecnologias como HTML, CSS, JavaScript, 
+        além de frameworks modernos como React e Node.js. Desenvolvi diversos projetos práticos,
+         incluindo websites responsivos e sistemas backend eficientes.
       </p>
-      <p class="en" style="font-style: italic;">
-        Since the beginning of 2024, I have been committed to learning web development by exploring technologies such as HTML, CSS, JavaScript, as well as modern frameworks like React and Node.js. I have developed several practical projects, including responsive websites and efficient backend systems.
+      <p class="en" style="font-style: italic; display: none;">
+        Since the beginning of 2024, I have been committed to learning web development 
+        by exploring technologies such as HTML, CSS, JavaScript, as well as modern frameworks 
+        like React and Node.js. I have developed several practical projects, 
+        including responsive websites and efficient backend systems.
       </p>
     </section>
-
-    <!-- Plugin VLibras -->
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
-      </div>
-    </div>
-    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
   </main>
 
-  <!-- Modal -->
+  <!-- Modal Reutilizável -->
   <div id="myModal" class="modal">
     <div class="modal-content">
-      <p id="modalText" style="font-weight: bold;">
+      <p id="modalText" class="pt">
         Este repositório apresenta as experiências profissionais e acadêmicas que marcaram minha trajetória. Cada experiência reflete meu aprendizado, habilidades adquiridas e desafios superados.
+      </p>
+      <p id="modalTextEn" class="en" style="display: none; font-style: italic;">
+        This repository showcases my professional and academic experiences that have shaped my journey. Each experience highlights the knowledge, skills, and challenges I’ve encountered and overcome.
       </p>
       <button id="toggleLanguage">English</button>
       <button id="closeModal">Avançar</button>
@@ -85,12 +87,9 @@
     <img src="images-index/eagle.jpg" alt="Eagle">
   </footer>
 
-  <!-- Inclusão da biblioteca Chart.js e do arquivo JS -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="js/script.js"></script>
+  <!-- Inclusão de arquivos JS -->
   <script src="js/modal.js"></script>
+  <script src="js/script.js"></script>
   <script src="js/idiomas.js"></script>
-
 </body>
 </html>
- 
