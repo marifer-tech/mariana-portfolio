@@ -102,3 +102,14 @@ footer img {
     height: 60px;
     justify-items: center;
 }
+
+footer p {
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+    footer p {
+        font-size: 15px;
+    }
+    }
+    

@@ -217,6 +217,17 @@ footer img {
     justify-items: center;
 }
 
+footer p {
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+footer p {
+    font-size: 15px;
+}
+}
+
+
 /* Estilo para o botão flutuante do LinkedIn */
 .linkedin-float {
     position: fixed;

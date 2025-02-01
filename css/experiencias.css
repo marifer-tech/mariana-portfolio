@@ -100,7 +100,18 @@ body {
     width: 60px;
     height: 60px;
   }
+
+  footer p {
+    font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  footer p {
+      font-size: 15px;
+  }
+  }
   
+
   /* Classe inicial para ocultar os elementos (para animação) */
   .hidden {
     opacity: 0;

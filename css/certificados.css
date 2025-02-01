@@ -103,7 +103,16 @@ footer img {
     justify-items: center;
 }
 
+footer p {
+    font-size: 30px;
+}
 
+@media (max-width: 768px) {
+    footer p {
+        font-size: 15px;
+    }
+    }
+    
 #totalHoursChart {
     width: 100%; /* Largura máxima do gráfico */
     max-width: 500px; /* Largura máxima em pixels */
