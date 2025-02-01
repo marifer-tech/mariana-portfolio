@@ -3,41 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formação Acadêmica</title>
+    <title>FORMAÇÃO ACADÊMICA</title>
     <link rel="stylesheet" href="css/academico.css">
-
 </head>
 
 <body>
     
     <header class="header">
         <h1>FORMAÇÃO ACADÊMICA</h1>
-        <p style="font-weight: bold;">
+        <h1 style="font-size: 13px;">ACADEMIC FORMATION</h1>
 
-        </p>
-
-        <p style="font-style: italic;">
-
-        </p>
-    <button onclick="window.history.back()" class="btn">Voltar</button>
+        <button onclick="window.history.back()" class="btn">←</button>
+        <button id="toggleCardsLanguage" class="btn">English</button>
+        
     </header>
     
 
     <main class="cards">
 
-    <section class="card">
-        <a href="">
-        <img src="">
+        <section class ="card hidden">
+            <h1 class ="pt">Minhas Notas do Primeiro Semestre</h1>
+            <h1 class ="en">My First Semester Grades</h1>
+            <img src="images-index/academico/grades.jpg">
+        
+            <p class="pt" style="font-weight: bold;">
+                Meu desempenho acadêmico no primeiro semestre foi muito bom, 
+                com uma média de 8.51 e notas bem distribuídas. A maior nota (9.67) 
+                foi em Leitura e Produção de Textos, enquanto a menor (7.00) foi em Lógica, 
+                o que pode indicar um desafio maior nessa disciplina. O desvio padrão de 0.87 
+                mostra que minhas notas foram relativamente consistentes, sem grandes variações. 
+                No geral, os resultados refletem um bom aproveitamento, com espaço para aprimoramento 
+                em algumas áreas específicas.
+            </p>
+        
+            <p class="en" style="font-style: italic; display: none;">
+                My academic performance in the first semester was very good, with an average of 8.51 
+                and well-distributed grades. The highest grade (9.67) was in Reading and Academic Writing, 
+                while the lowest (7.00) was in Logic, which might indicate a greater challenge in that 
+                subject. The standard deviation of 0.87 shows that my grades were relatively consistent,
+                 with no major variations. Overall, the results reflect strong performance, with room for
+                  improvement in specific areas.
+            </p>
+            </section>
+
+    <section class="card hidden">
+        <h1 class ="pt">Semana Acadêmica | 2024</h1>
+        <h1 class ="en">Academic Week | 2024</h1>
+        <a href="https://www.ic.ufmt.br/semanaacademica/" target="_blank">
+        <img src="images-index/academico/semana-academica.jpg">
         </a>
+        <p class="pt" style="font-weight: bold;">
+            Participei da II Semana Acadêmica do Instituto de Computação, 
+            realizada entre 19 e 21 de agosto de 2024. Durante o evento, 
+            tive a oportunidade de acompanhar palestras inspiradoras, participar de workshops 
+            práticos e interagir com profissionais, pesquisadores e colegas da área. 
+            Foi uma experiência enriquecedora, onde aprimorei meus conhecimentos, 
+            explorei novas ideias e ampliei minha rede de contatos no setor de tecnologia.
+        </p>
+
+        <p class="en" style="font-style: italic; display: none;">
+            I participated in the II Academic Week of the Institute of Computing, held from August 19 to 21, 2024. 
+            During the event, I had the opportunity to attend inspiring lectures, engage in hands-on 
+            workshops, and connect with 
+            professionals, researchers, and peers in the field. It was an enriching experience where 
+            I enhanced my knowledge, explored new ideas, and expanded my professional network in the technology sector.   
+        </p>
     </section>
 
-    <section class="card">
-        <a href="">
-        <img src="">
+    <section class="card hidden">
+        <h1 class="pt">Atlética TROJAN</h1>
+        <h1 class="en">TROJAN Athletic</h1>
+        <a href="https://www.instagram.com/atleticatrojan/" target="_blank"></a>
+        <img src="images-index/academico/atletica.png">
         </a>
+        <p class="pt" style="font-weight: bold;">
+            O Cavalo de Troia é o símbolo da Atlética de Sistemas de Informação da UFMT, 
+            e eu me identifico com essa escolha. Ele representa estratégia, inteligência e inovação, 
+            características essenciais tanto na mitologia quanto na área da tecnologia.
+            Além do significado histórico, o conceito de Trojan também está presente na cibersegurança, 
+            fazendo referência a ataques disfarçados que exploram vulnerabilidades. 
+            Para mim, esse símbolo reflete a criatividade, a capacidade de adaptação e o espírito de 
+            superação dos estudantes de tecnologia.
+        </p>
+ 
+        <p class="en" style="font-style: italic; display: none;">
+            The Trojan Horse is the symbol of the Information Systems Athletic Association at UFMT, 
+            and I identify with this choice. It represents strategy, intelligence, and innovation, 
+            qualities that are essential both in mythology and in the field of technology.
+            Beyond its historical meaning, the Trojan concept is also present in cybersecurity, 
+            referring to disguised attacks that exploit vulnerabilities. To me, this symbol 
+            reflects the creativity, adaptability, and resilience of technology students.
     </section>
 
     </main>
+
+ <!-- Modal Reutilizável -->
+ <div id="myModal" class="modal">
+    <div class="modal-content">
+      <p id="modalText" class="pt">
+        Este repositório reúne minha trajetória acadêmica, incluindo cursos, 
+        certificações e experiências educacionais que contribuíram 
+        para o meu crescimento profissional. Cada registro reflete meu compromisso 
+        com o aprendizado contínuo e minha busca por conhecimento em diversas áreas.
+      </p>
+      <p id="modalTextEn" class="en" style="display: none; font-style: italic;">
+        This repository showcases my academic journey, including courses, certifications, 
+        and educational experiences that have contributed to my professional growth.
+         Each entry reflects my commitment to continuous learning and my pursuit of knowledge 
+         in various fields.
+      </p>
+      <button id="toggleLanguage">English</button>
+      <button id="closeModal">→</button>
+    </div>
+  </div>
 
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
@@ -55,6 +133,9 @@
         <img src ="images-index/eagle.jpg">
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Inclusão de arquivos JS -->
+  <script src="js/modal.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/idiomas.js"></script>
 </body>
 </html>
