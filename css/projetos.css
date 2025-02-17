@@ -96,6 +96,26 @@ header .btn {
     border-radius: 0.5em;
 }
 
+bnt-card {
+ display: inline-block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #e0a800;
+    color: #3e003e;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+btn-card:hover {
+        background-color: #d4be7d;
+}
+
 footer {
     background-color: #240024;
     padding: 20px 0;
