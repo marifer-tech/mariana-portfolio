@@ -96,7 +96,7 @@ header .btn {
     border-radius: 0.5em;
 }
 
-bnt-card {
+.card .btn {
  display: inline-block;
     padding: 10px 20px;
     margin: 20px auto;
@@ -112,7 +112,7 @@ bnt-card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-btn-card:hover {
+.card .btn:hover {
         background-color: #d4be7d;
 }
 
