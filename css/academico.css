@@ -90,6 +90,26 @@ header .btn {
     margin-bottom: 10px;
 }
 
+.card .btn {
+    display: inline-block;
+       padding: 10px 20px;
+       margin: 20px auto;
+       background-color: #e0a800;
+       color: #3e003e;
+       text-decoration: none;
+       border-radius: 5px;
+       font-size: 1em;
+       font-weight: bold;
+       transition: background-color 0.3s, transform 0.3s;
+       text-align: center;
+       cursor: pointer;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+   }
+   
+   .card .btn:hover {
+           background-color: #d4be7d;
+   }
+
 /* Classe inicial para ocultar os elementos */
 .hidden {
     opacity: 0;
