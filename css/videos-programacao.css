@@ -1,0 +1,194 @@
+/* ======= Estilos Gerais ======= */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #3e003e;
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+}
+
+/* ======= Cabeçalho ======= */
+.header {
+    padding: 20px;
+    background-color: #240024;
+}
+
+.header h1 {
+    font-size: 1.4em;
+    background: #e0a800;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header p {
+    font-size: 1em;
+    color: #ddd;
+    text-align: justify;
+}
+
+header .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #e0a800;
+    color: #3e003e;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header .btn:hover {
+    background-color: #d4be7d;
+}
+
+
+/* Responsividade dos botões */
+@media (max-width: 480px) {
+    .btn {
+        width: 45%;
+        font-size: 0.8em;
+        padding: 6px 10px;
+    }
+}
+
+/* ======= Contêiner dos Vídeos ======= */
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+
+/* ======= Estilo para Vídeos ======= */
+.video-container iframe {
+    width: 90%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ======= Rodapé ======= */
+
+footer {
+    background-color: #240024;
+    padding: 20px 0;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer img {
+    width: 60px;
+    height: 60px;
+    justify-items: center;
+}
+
+footer p {
+    font-size: 30px;
+}
+
+/* ======= Modal Melhorado ======= */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #1c001c;
+    padding: 18px;
+    border-radius: 10px;
+    width: 85%;
+    max-width: 450px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Botões do Modal */
+.modal-content button {
+    padding: 8px 14px;
+    margin: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e0a800;
+    color: #3e003e;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.modal-content button:hover {
+    background-color: #d4be7d;
+    transform: scale(1.05);
+}
+
+/* ======= Responsividade Avançada ======= */
+@media (max-width: 768px) {
+    /* Ajustando vídeos para melhor adaptação */
+    .video-container iframe {
+        width: 95%;
+        max-width: 100%;
+    }
+
+    /* Modal otimizado para celular */
+    .modal-content {
+        width: 90%;
+        max-width: 380px;
+        padding: 12px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Modal para telas muito pequenas */
+    .modal-content {
+        width: 90%;
+        max-width: 340px;
+        padding: 12px;
+    }
+
+    .modal-content p {
+        font-size: 13px;
+    }
+
+    .modal-content button {
+        font-size: 0.85em;
+        padding: 7px 12px;
+    }
+
+    /* Ajuste de tamanho de fonte */
+    .header h1 {
+        font-size: 1.2em;
+    }
+
+    /* Ajuste no rodapé */
+    footer {
+        padding: 6px;
+        font-size: 11px;
+    }
+
+    footer img {
+        width: 30px;
+        height: 30px;
+    }
+}

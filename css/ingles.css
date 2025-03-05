@@ -16,8 +16,8 @@ header .btn {
     display: inline-block;
     padding: 10px 20px;
     margin: 20px auto;
-    background-color: #da1e76;
-    color: #fff;
+    background-color: #e0a800;
+    color: #3e003e;
     text-decoration: none;
     border-radius: 5px;
     font-size: 1em;
@@ -27,6 +27,11 @@ header .btn {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.header .btn:hover {
+    background-color: #d4be7d;
+}
+
 
 .header h1 {
     font-size: 1.4em;
@@ -73,11 +78,11 @@ header .btn {
     transform: scale(1.05);
 }
 
-.card h2 {
-    font-size: 2em;
-    color: #f763a6;
+.card h1 {
+    font-size: 5 em;
+    color: #e0a800;
     margin-bottom: 10px;
-    background: linear-gradient(to right, #f763a6, #7f00ff);
+    background: #e0a800;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

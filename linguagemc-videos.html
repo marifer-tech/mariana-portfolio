@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagem C</title>
+    <link rel="stylesheet" href="css/videos-programacao.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Linguagem C</h1>
+        <h1 style="font-size: 13px;">C Language</h1>
+        
+        <button onclick="window.history.back()" class="btn">←</button>
+    </header>
+
+    <main class="video-container">
+        <iframe 
+            src="https://www.youtube.com/embed/GnSuzWENl7k" 
+            frameborder="0" allowfullscreen>
+        </iframe>
+    </main>
+
+    <!-- Plugin VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- Modal Reutilizável -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p id="modalText" class="pt">
+                Nesta página, você encontrará os <strong>meus vídeos ensinando programação</strong>. 
+                Cada vídeo traz conceitos fundamentais e exercícios práticos para ajudar no aprendizado 
+                de forma dinâmica e acessível.
+            </p>
+            <p id="modalTextEn" class="en" style="display: none; font-style: italic;">
+                On this page, you will find <strong>my videos teaching programming</strong>. 
+                Each video covers fundamental concepts and practical exercises to help with learning 
+                in a dynamic and accessible way.
+            </p>
+            <button id="toggleLanguage">English</button>
+            <button id="closeModal">→</button>
+        </div>
+    </div>
+
+    <!-- Inclusão de arquivos JS -->
+    <script src="js/modal.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/idiomas.js"></script>
+</body>
+
+<footer>
+    <p>&copy; 2024 Desenvolvido por Mariana Fernanda da Silva</p>
+    <img src="images-index/eagle.jpg">
+</footer>
+
+</html>
