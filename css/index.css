@@ -191,13 +191,12 @@ font-size: 0.7em;
 .profile-pic {
     position: relative;
     display: inline-block;
-    width: 14em; /* Ajustado para incluir a borda */
-    height: 14em;
+    width: 16em; /* Ajustado para incluir a borda */
+    height: 16em;
     border-radius: 50%;
     background: linear-gradient(90deg, #3e003e, #e0a800, #240024, #3e003e, #3e003e);
     background-size: 400% 400%; /* Tamanho do gradiente para animação */
     animation: borderAnimation 3s linear infinite; /* Animação contínua */
-    padding: 5px; /* Largura da borda */
     box-sizing: border-box; /* Inclui o padding no tamanho total */
 }
 
@@ -219,7 +218,7 @@ font-size: 0.7em;
 .profile-pic img {
     width: 100%; /* Adapta ao contêiner */
     height: 100%;
-    border-radius: 50%; /* Mantém a imagem redonda */
+    border-radius: 10%; /* Mantém a imagem redonda */
     display: block; /* Remove espaços extras ao redor da imagem */
 }
 
