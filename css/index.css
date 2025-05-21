@@ -35,8 +35,7 @@ body {
 }
 
 .header img {
-height: 150px; /*altura*/
-width: 150px; /*largura*/
+width: 250px; /*largura*/
 }
 
 .header .social-images img {
@@ -232,7 +231,6 @@ footer {
 
 footer img {
     width: 60px;
-    height: 60px;
     justify-items: center;
 }
 
