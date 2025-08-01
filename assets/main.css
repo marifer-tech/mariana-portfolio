@@ -14,58 +14,16 @@
     --gradient-secondary: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
 }
 
-.neon-text {
-    text-shadow: 0 0 5px var(--primary-color), 
-                 0 0 10px var(--primary-color), 
-                 0 0 20px var(--primary-color);
-    animation: neon-glow 1.5s ease-in-out infinite alternate;
-}
-
-@keyframes neon-glow {
-    from {
-        text-shadow: 0 0 5px var(--primary-color), 
-                     0 0 10px var(--primary-color);
-    }
-    to {
-        text-shadow: 0 0 10px var(--primary-color), 
-                     0 0 20px var(--primary-color), 
-                     0 0 30px var(--accent-color);
-    }
-}
-
-.neon-border {
-    position: relative;
-}
-
-.neon-border::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    padding: 2px;
-    background: var(--gradient-primary);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    pointer-events: none;
-    animation: border-pulse 2s infinite;
-}
-
-@keyframes border-pulse {
-    0%, 100% { opacity: 0.8; }
-    50% { opacity: 0.3; }
-}
-
-/* Smooth scroll behavior */
-html {
-    scroll-behavior: smooth;
-}
-
+/* Reset e Estilos Globais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -75,6 +33,7 @@ body {
     min-height: 100vh;
     margin: 0;
     overflow-x: hidden;
+    color: var(--text-color);
 }
 
 @keyframes gradientBG {
@@ -82,7 +41,7 @@ body {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-/* Container with subtle animation */
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -95,7 +54,7 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Header with glass morphism effect */
+/* Header */
 header {
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -118,10 +77,8 @@ header.scrolled {
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    transition: var(--transition);
 }
 
-/* Logo with animation */
 .logo {
     display: flex;
     align-items: center;
@@ -136,7 +93,6 @@ header.scrolled {
     height: 60px;
     margin-right: 10px;
     transition: var(--transition);
-
 }
 
 .logo:hover img {
@@ -153,7 +109,6 @@ header.scrolled {
     transition: var(--transition);
 }
 
-/* Navigation links with improved animation */
 .nav-links {
     display: flex;
     list-style: none;
@@ -193,7 +148,6 @@ header.scrolled {
     width: 100%;
 }
 
-/* Language toggle with pulse animation */
 .language-toggle {
     background: none;
     border: none;
@@ -219,14 +173,14 @@ header.scrolled {
     100% { transform: scale(1); }
 }
 
-/* Hero Section with floating animation */
+/* Hero Section */
 .hero {
     padding: 180px 0 100px;
-    display: flex;
-    align-items: center;
     min-height: 100vh;
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .hero::before {
@@ -249,10 +203,16 @@ header.scrolled {
     50% { transform: translateY(-20px); }
 }
 
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .hero-content {
-    flex: 1;
+    flex: 0 1 55%;
     padding-right: 50px;
-    position: relative;
 }
 
 .hero h1 {
@@ -289,7 +249,28 @@ header.scrolled {
     font-size: 1.1rem;
 }
 
-/* Buttons with gradient and hover effect */
+.hero-image {
+    flex: 0 1 45%;
+    text-align: right;
+}
+
+.hero-image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 10px solid white;
+    box-shadow: var(--shadow-lg);
+    animation: float 4s ease-in-out infinite;
+    transition: var(--transition);
+}
+
+.hero-image:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons */
 .btn {
     display: inline-block;
     background: var(--gradient-primary);
@@ -339,30 +320,6 @@ header.scrolled {
     border-color: transparent;
 }
 
-/* Hero image with floating animation */
-.hero-image {
-    flex: 1;
-    text-align: center;
-    position: relative;
-}
-
-.hero-image img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 10px solid white;
-    box-shadow: var(--shadow-lg);
-    animation: float 4s ease-in-out infinite;
-    transition: var(--transition);
-}
-
-.hero-image:hover img {
-    transform: scale(1.05);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
-}
-
-/* Estilo para o botão de trajetória */
 .btn-trajectory {
     display: inline-block;
     background: var(--gradient-secondary);
@@ -401,7 +358,7 @@ header.scrolled {
     left: 100%;
 }
 
-/* Social icons with bounce effect */
+/* Social Icons */
 .social-icons {
     display: flex;
     margin-top: 30px;
@@ -420,7 +377,7 @@ header.scrolled {
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
     position: relative;
-        text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 .social-icons a:hover {
@@ -436,7 +393,7 @@ header.scrolled {
     50% { transform: translateY(5px); }
 }
 
-/* Section styling with subtle animation */
+/* Sections */
 .section {
     padding: 120px 0;
     position: relative;
@@ -474,7 +431,7 @@ header.scrolled {
     font-size: 1.1rem;
 }
 
-/* About section with animated border */
+/* About Section */
 .about-content {
     display: flex;
     align-items: center;
@@ -505,9 +462,8 @@ header.scrolled {
 }
 
 @keyframes borderAnimation {
-    0% { opacity: 0.5; }
+    0%, 100% { opacity: 0.5; }
     50% { opacity: 1; }
-    100% { opacity: 0.5; }
 }
 
 .about-text h3 {
@@ -522,7 +478,6 @@ header.scrolled {
     font-size: 1.05rem;
 }
 
-/* Audio player customization */
 .about-audio {
     margin-top: 30px;
 }
@@ -552,7 +507,6 @@ header.scrolled {
     box-shadow: var(--shadow-md);
 }
 
-/* Custom audio controls */
 audio::-webkit-media-controls-panel {
     background-color: white;
     border-radius: 5px;
@@ -569,7 +523,6 @@ audio::-webkit-media-controls-time-remaining-display {
     color: var(--text-color);
 }
 
-/* About image with hover effect */
 .about-image {
     flex: 1;
     text-align: center;
@@ -589,7 +542,7 @@ audio::-webkit-media-controls-time-remaining-display {
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
-/* Skills section with animated bars */
+/* Skills Section */
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -669,7 +622,7 @@ audio::-webkit-media-controls-time-remaining-display {
     transition: width 1.5s ease-out, background 0.3s ease;
 }
 
-/* Experience section with enhanced timeline */
+/* Experience Section */
 .experience-tabs {
     display: flex;
     justify-content: center;
@@ -876,7 +829,7 @@ audio::-webkit-media-controls-time-remaining-display {
     color: var(--primary-color);
 }
 
-/* Projects section with 3D card effect */
+/* Projects Section */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -1006,7 +959,7 @@ audio::-webkit-media-controls-time-remaining-display {
     border-color: transparent;
 }
 
-/* Certificates section with hover flip effect */
+/* Certificates Section */
 .certificates-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1092,7 +1045,7 @@ audio::-webkit-media-controls-time-remaining-display {
     transform: translateX(3px);
 }
 
-/* Contact section with floating form */
+/* Contact Section */
 .contact-container {
     display: flex;
     gap: 50px;
@@ -1280,7 +1233,7 @@ textarea.form-control {
     left: 100%;
 }
 
-/* Footer with wave effect */
+/* Footer */
 footer {
     background-color: var(--dark-color);
     color: white;
@@ -1392,7 +1345,7 @@ footer::before {
     opacity: 0.8;
 }
 
-/* Back to Top Button with animation */
+/* Back to Top Button */
 .back-to-top {
     position: fixed;
     bottom: 30px;
@@ -1472,6 +1425,49 @@ footer::before {
     transform: translateY(50%) rotate(-45deg);
 }
 
+/* Neon Effects */
+.neon-text {
+    text-shadow: 0 0 5px var(--primary-color), 
+                 0 0 10px var(--primary-color), 
+                 0 0 20px var(--primary-color);
+    animation: neon-glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon-glow {
+    from {
+        text-shadow: 0 0 5px var(--primary-color), 
+                     0 0 10px var(--primary-color);
+    }
+    to {
+        text-shadow: 0 0 10px var(--primary-color), 
+                     0 0 20px var(--primary-color), 
+                     0 0 30px var(--accent-color);
+    }
+}
+
+.neon-border {
+    position: relative;
+}
+
+.neon-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: var(--gradient-primary);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    animation: border-pulse 2s infinite;
+}
+
+@keyframes border-pulse {
+    0%, 100% { opacity: 0.8; }
+    50% { opacity: 0.3; }
+}
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .hero h1 {
@@ -1494,6 +1490,12 @@ footer::before {
     .hero-content {
         padding-right: 0;
         margin-bottom: 50px;
+        flex: 1 1 100%;
+    }
+
+    .hero-image {
+        flex: 1 1 100%;
+        text-align: center;
     }
 
     .hero-buttons {
