@@ -133,9 +133,10 @@ header.scrolled {
 }
 
 .logo img {
-    height: 40px;
+    height: 60px;
     margin-right: 10px;
     transition: var(--transition);
+
 }
 
 .logo:hover img {
@@ -361,6 +362,45 @@ header.scrolled {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilo para o botão de trajetória */
+.btn-trajectory {
+    display: inline-block;
+    background: var(--gradient-secondary);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    transition: var(--transition);
+    border: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-trajectory:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    background: var(--gradient-primary);
+}
+
+.btn-trajectory::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.btn-trajectory:hover::before {
+    left: 100%;
+}
+
 /* Social icons with bounce effect */
 .social-icons {
     display: flex;
@@ -380,6 +420,7 @@ header.scrolled {
     box-shadow: var(--shadow-sm);
     transition: var(--transition);
     position: relative;
+        text-decoration: none !important;
 }
 
 .social-icons a:hover {
@@ -1330,6 +1371,7 @@ footer::before {
     border-radius: 50%;
     color: white;
     transition: var(--transition);
+    text-decoration: none !important;
 }
 
 .footer-social a:hover {

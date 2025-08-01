@@ -25,6 +25,7 @@
             });
         });
         
+        
         // Experience Tabs
         const tabBtns = document.querySelectorAll('.tab-btn');
         const tabContents = document.querySelectorAll('.tab-content');
