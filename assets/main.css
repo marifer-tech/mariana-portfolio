@@ -461,10 +461,6 @@ header.scrolled {
     animation: borderAnimation 4s linear infinite;
 }
 
-@keyframes borderAnimation {
-    0%, 100% { opacity: 0.5; }
-    50% { opacity: 1; }
-}
 
 .about-text h3 {
     font-size: 1.8rem;
@@ -1709,3 +1705,6 @@ footer::before {
     visibility: visible;
     opacity: 1;
 }
+
+
+
