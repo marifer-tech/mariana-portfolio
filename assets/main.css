@@ -836,13 +836,13 @@ audio::-webkit-media-controls-time-remaining-display {
 .timeline-description li {
     margin-bottom: 6px;
     position: relative;
+    color: #000;
 }
 
 .timeline-description li::before {
-    content: '▹';
+    content: '';
     position: absolute;
     left: -18px;
-    color: var(--primary-color);
 }
 
 /* Projects Section */
@@ -1772,7 +1772,7 @@ footer::before {
     }
     
     .logo-text {
-        font-size: 1.1rem;
+        font-size: 3rem;
     }
     
     .hamburger {
